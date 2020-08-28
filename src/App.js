@@ -1,24 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Facade from './components/Facade/Facade';
 
 function App() {
+  const sectionSize = [1, 2, 3, 4];
+  const panelsNumber = ['a', 'b', 'c', 'd'];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Facade sectionSize={sectionSize} panelsNumber={panelsNumber} />
     </div>
   );
 }
